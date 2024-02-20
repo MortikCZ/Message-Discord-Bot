@@ -2,9 +2,7 @@ import discord
 from discord.ext import commands
 from discord.ext.commands import has_permissions
 
-intents = discord.Intents.default()
-intents.message_content = True
-intents.members = True
+intents = discord.Intents.all()
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
